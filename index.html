@@ -9,10 +9,81 @@
     <title></title>
   </head>
   <body>
+<header id="header">
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">TopCasaFina Arquitetura</a>
+    </div>
+      <div class="collapse navbar-collapse" id="collapse-navbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#projetos">Nossos projetos</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#video">Vídeo</a></li>
+          <li><a href="#rodape">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+</header>
+
+<section id="depoimentos">
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+          <img src="img/depoimentos/projetos0.png">
+        <div class="carousel-caption">
+          <h3>Yuri Padilha</h3>
+          <p>"Gostei muito e achei rápido o serviço."</p>
+        </div>
+      </div>
+      <div class="item">
+          <img src="img/depoimentos/projetos1.png">
+        <div class="carousel-caption">
+            <h3>Yuri Padilha</h3>
+            <p>"Gostei muito e achei rápido o serviço."</p>
+        </div>
+      </div>
+      <div class="item">
+          <img src="img/depoimentos/projetos2.png">
+        <div class="carousel-caption">
+            <h3>Yuri Padilha</h3>
+            <p>"Gostei muito e achei rápido o serviço."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</section>
+
 
     <!-- container centralizar o bloco da div -->
- <section class="container">
-
+ <section id="sobre" class="container">
     <h2>Sobre nós</h2>
     <img class="img-responsive" src="img/empresa.jpg" ><br>
 
@@ -27,7 +98,7 @@
             </div>
           </div>
       </div>
-      
+
       <div class="panel panel-default">
           <div class="panel-heading">
               <h3 class="panel-title" data-toggle="collapse"  data-target="#segundo-paragrafo" data-parent="#paineis-sobre">Preços acessíveis</h3>
@@ -35,10 +106,10 @@
           <div id="segundo-paragrafo" class="collapse">
             <div class="panel-body">
               <p>Preços a partir de R$ 1000,00</p>
-            </div>  
+            </div>
           </div>
       </div>
-    
+
       <div class="panel panel-default">
           <div class="panel-heading">
               <h3 class="panel-title" data-toggle="collapse"  data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">Alegria em colaborar com um mundo mais bonito</h3>
@@ -60,7 +131,7 @@
     </div>
   </div>
 
-<section class="container">
+<section id="projetos" class="container">
   <h2>Nossos Projetos</h2>
 
   <!-- thumbnail são os blocos das imagens "os cards" -->
@@ -79,7 +150,7 @@
           <p>Aqui vai um texto</p>
         </figcaption>
   </div>
-  
+
   <div class="thumbnail">
       <img src="img/projetos/mercado-marapira.png" alt="Imagem mercado marapira">
         <figcaption class="caption">
@@ -87,7 +158,7 @@
           <p>Aqui vai um texto</p>
         </figcaption>
   </div>
-  
+
   <div class="thumbnail">
       <img src="img/projetos/palacio-dionisio.png" alt="Imagem palacio diosinisio">
         <figcaption class="caption">
@@ -95,7 +166,7 @@
           <p>Aqui vai um texto</p>
         </figcaption>
   </div>
-  
+
   <div class="thumbnail">
       <img src="img/projetos/residencia-ludi.png" alt="Imagem residencia ludi">
         <figcaption class="caption">
@@ -105,53 +176,22 @@
   </div>
 </section>
 
-<section>
-  <h2 class="titulo-depoimentos">Depoimentos de clientes</h2>
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-          <img src="img/depoimentos/projetos0.png">
-        <div class="carousel-caption">              
-          <h3>Yuri Padilha</h3>
-          <p>"Gostei muito e achei rápido o serciço."</p>
-        </div>
-      </div>
-      <div class="item">
-          <img src="img/depoimentos/projetos1.png">
-        <div class="carousel-caption">
-            <h3>Yuri Padilha</h3>
-            <p>"Gostei muito e achei rápido o serciço."</p>          
-        </div>
-      </div>
-      <div class="item">
-          <img src="img/depoimentos/projetos2.png">
-        <div class="carousel-caption">
-            <h3>Yuri Padilha</h3>
-            <p>"Gostei muito e achei rápido o serciço."</p>
-        </div>
-      </div>
+<div id="video" class="container">
+  <h2> Portifólio </h2>
+    <div class="embed-responsive embed-responsive-4by3">
+      <iframe class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/xzqV0mLThoI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+</div>
 
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+<address id="rodape">
+  <strong>TopCasaFina Arquitetura</strong><br>
+  Rua Vergueiro, 3184, Vila Mariana.<br>
+  São Paulo, SP<br><br>
+  Email: email@email.com<br>
+  <abbr title="Phone">  Tel: (11) 8493-4544 ou 7583-5837</abbr>
+</address>
 
-</section>
 
 <!-- o bootstrap utiliza propriedades do jquery e do JavaScript -->
 <script src="jquery.min.js"></script>
@@ -159,11 +199,3 @@
 
   </body>
 </html>
-
-
-
-
-
-
-
-

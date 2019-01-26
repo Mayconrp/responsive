@@ -1,13 +1,17 @@
+
+
 #paineis-sobre{
     margin-top: 2px;
 }
 
-.titulo-depoimentos{
-    background-color: #0275d8;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 0px;
-    font-size: 24px;
+#depoimentos{
+  margin-top: -20px;
+}
+#rodape{
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: #333;
+  color: #fff
 }
