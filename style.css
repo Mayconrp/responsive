@@ -1,11 +1,45 @@
+header{
+  background-image: url(img/castelo.jpg);
+  /* identifica como capa*/
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
+  position: relative;
+}
+html, body{
+  height: 100%;
+}
 
+.topCasaFina-banner{
+  color: #fff;
+  /* tranparencia regba onde a é a transparencia*/
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 80%;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  /*efeito de transição */
+  transition: 1s;
+}
+header h1{
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 #paineis-sobre{
-    margin-top: 2px;
+    margin-top: 20px;
 }
 
 #depoimentos{
-  margin-top: -20px;
+  margin-top: 20px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+
 }
 #rodape{
   margin-top: 50px;
@@ -15,3 +49,27 @@
   background-color: #333;
   color: #fff
 }
+#btn-principal{
+  color: white;
+}
+
+/* @media define o tamanho em que o layout vai receber o valor */
+@media(min-width:768px){
+  #paineis-sobre{
+    margin-top: -20px;
+  }
+}
+
+@media(min-width:992px){
+  .topCasaFina-banner{
+    left: 50px;
+    transform: translate(0 , -80px);
+    width: 50%;
+    
+  }
+  .topCasaFina-bannerWrapper{
+    position: relative;
+    height: 100%;
+  }
+}
+

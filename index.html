@@ -9,32 +9,152 @@
     <title></title>
   </head>
   <body>
-<header id="header">
-<nav class="navbar navbar-inverse">
-  <div class="container">
-    <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">TopCasaFina Arquitetura</a>
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">TopCasaFina Arquitetura</a>
+      </div>
+        <div class="collapse navbar-collapse" id="collapse-navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#projetos">Nossos projetos</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#video">Vídeo</a></li>
+            <li><a href="#rodape">Contato</a></li>
+          </ul>
+      </div>
+  </nav>
+
+  <div class="container topCasaFina-bannerWrapper">
+    <div class="topCasaFina-banner">
+      <h1>TopCasaFina Arquitetura</h1>
+        <p>Projetando a casa dos sonhos desde 2000 A.C.</p>
+      <button class="btn btn-primary btn-lg"><a id="btn-principal" href="#rodape">Contate-nos agora</a></button>
     </div>
-      <div class="collapse navbar-collapse" id="collapse-navbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#projetos">Nossos projetos</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#video">Vídeo</a></li>
-          <li><a href="#rodape">Contato</a></li>
-        </ul>
-    </div>
-</nav>
+  </div>
 </header>
 
-<section id="depoimentos">
 
+    <!-- container centralizar o bloco da div -->
+ <section id="sobre" class="container">
+    <h2>Sobre nós</h2>
+    <div class="row">
+      <img class="img-responsive col-sm-6" src="img/empresa.jpg" ><br>
+
+      <div class="panel-group col-sm-6" id="paineis-sobre">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title" data-toggle="collapse"  data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">Desde 1935</h3>
+            </div>
+            <div  id="primeiro-paragrafo" class="collapse">
+              <div class="panel-body">
+                <p>Desde 1935 trazendo casas, mansões e prédios arquitetônicos pelo mundo.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title" data-toggle="collapse"  data-target="#segundo-paragrafo" data-parent="#paineis-sobre">Preços acessíveis</h3>
+            </div>
+            <div id="segundo-paragrafo" class="collapse">
+              <div class="panel-body">
+                <p>Preços a partir de R$ 1000,00</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title" data-toggle="collapse"  data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">Alegria em colaborar com um mundo mais bonito</h3>
+            </div>
+            <div id="terceiro-paragrafo" class="collapse">
+              <div class="panel-body">
+                <p>Trazendo o futuro até você</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+  <div class="jumbotron">
+    <div class="container">
+      <h3>Mais de 300 prêmios em Design</h3>
+      <p>Mais de 5 milhões de clientes satisfeitos em todo o mundo.</p>
+    </div>
+  </div>
+
+<section id="projetos" class="container">
+  <h2>Nossos Projetos</h2>
+
+  <!-- o row define o começo e o fim do sitema de grid do bootstrap -->
+  <div class="row">
+    <!-- o grid funciona com 12 grades, vc deve divilas de acordo com cada bloco e tamanho da resolução -->
+    <div class="col-sm-6 col-md-4 col-lg-3 ">
+    <!-- thumbnail são os blocos das imagens "os cards" -->
+      <figure class="thumbnail">
+        <img src="img/projetos/casa-castelo.png" alt="Imagem casa castelo">
+          <figcaption class="caption">
+            <h3>Casa Castelo</h3>
+            <p>Aqui vai um texto</p>
+          </figcaption>
+      </figure>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure class="thumbnail">
+          <img src="img/projetos/casa-lago.png" alt="Imagem casa casa lago">
+            <figcaption class="caption">
+              <h3>Casa lago</h3>
+              <p>Aqui vai um texto</p>
+            </figcaption>
+      </figure>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure class="thumbnail">
+          <img src="img/projetos/mercado-marapira.png" alt="Imagem mercado marapira">
+            <figcaption class="caption">
+              <h3>Mercado Marapira</h3>
+              <p>Aqui vai um texto</p>
+            </figcaption>
+      </figure>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure class="thumbnail">
+          <img src="img/projetos/palacio-dionisio.png" alt="Imagem palacio diosinisio">
+            <figcaption class="caption">
+              <h3>Palácio Dionísio</h3>
+              <p>Aqui vai um texto</p>
+            </figcaption>
+      </figure>
+    </div>  
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure class="thumbnail">
+          <img src="img/projetos/residencia-ludi.png" alt="Imagem residencia ludi">
+            <figcaption class="caption">
+              <h3>Residencia Ludi</h3>
+              <p>Aqui vai um texto</p>
+            </figcaption>
+          </div>
+        </figure>
+    </div>
+
+</section>
+
+<section id="depoimentos">
+  <h2> Alguns depoimentos</h2>
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -82,120 +202,61 @@
 </section>
 
 
-    <!-- container centralizar o bloco da div -->
- <section id="sobre" class="container">
-    <h2>Sobre nós</h2>
-    <img class="img-responsive" src="img/empresa.jpg" ><br>
-
-    <div class="panel-group" id="paineis-sobre">
-      <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title" data-toggle="collapse"  data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">Desde 1935</h3>
-          </div>
-          <div  id="primeiro-paragrafo" class="collapse">
-            <div class="panel-body">
-              <p>Desde 1935 trazendo casas, mansões e prédios arquitetônicos pelo mundo.</p>
-            </div>
-          </div>
-      </div>
-
-      <div class="panel panel-default">
-          <div class="panel-heading">
-              <h3 class="panel-title" data-toggle="collapse"  data-target="#segundo-paragrafo" data-parent="#paineis-sobre">Preços acessíveis</h3>
-          </div>
-          <div id="segundo-paragrafo" class="collapse">
-            <div class="panel-body">
-              <p>Preços a partir de R$ 1000,00</p>
-            </div>
-          </div>
-      </div>
-
-      <div class="panel panel-default">
-          <div class="panel-heading">
-              <h3 class="panel-title" data-toggle="collapse"  data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">Alegria em colaborar com um mundo mais bonito</h3>
-          </div>
-          <div id="terceiro-paragrafo" class="collapse">
-            <div class="panel-body">
-              <p>Trazendo o futuro até você</p>
-            </div>
-          </div>
-      </div>
-    </div>
-</section>
-
-
-  <div class="jumbotron">
-    <div class="container">
-      <h3>Mais de 300 prêmios em Design</h3>
-      <p>Mais de 5 milhões de clientes satisfeitos em todo o mundo.</p>
-    </div>
-  </div>
-
-<section id="projetos" class="container">
-  <h2>Nossos Projetos</h2>
-
-  <!-- thumbnail são os blocos das imagens "os cards" -->
-  <div class="thumbnail">
-    <img src="img/projetos/casa-castelo.png" alt="Imagem casa castelo">
-      <figcaption class="caption">
-        <h3>Casa Castelo</h3>
-        <p>Aqui vai um texto</p>
-      </figcaption>
-  </div>
-
-  <div class="thumbnail">
-      <img src="img/projetos/casa-lago.png" alt="Imagem casa casa lago">
-        <figcaption class="caption">
-          <h3>Casa lago</h3>
-          <p>Aqui vai um texto</p>
-        </figcaption>
-  </div>
-
-  <div class="thumbnail">
-      <img src="img/projetos/mercado-marapira.png" alt="Imagem mercado marapira">
-        <figcaption class="caption">
-          <h3>Mercado Marapira</h3>
-          <p>Aqui vai um texto</p>
-        </figcaption>
-  </div>
-
-  <div class="thumbnail">
-      <img src="img/projetos/palacio-dionisio.png" alt="Imagem palacio diosinisio">
-        <figcaption class="caption">
-          <h3>Palácio Dionísio</h3>
-          <p>Aqui vai um texto</p>
-        </figcaption>
-  </div>
-
-  <div class="thumbnail">
-      <img src="img/projetos/residencia-ludi.png" alt="Imagem residencia ludi">
-        <figcaption class="caption">
-          <h3>Residencia Ludi</h3>
-          <p>Aqui vai um texto</p>
-        </figcaption>
-  </div>
-</section>
 
 
 <div id="video" class="container">
-  <h2> Portifólio </h2>
-    <div class="embed-responsive embed-responsive-4by3">
-      <iframe class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/xzqV0mLThoI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+  <div class="row">
+    <section id="video" class="col-sm-6">
+        <h2> Vídeo de arquiteturas</h2>
+      <div class="embed-responsive embed-responsive-4by3">
+        <iframe class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/embed/xzqV0mLThoI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>  
+
+    <section id="contato" class="col-sm-6">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco</p>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>  
+    </section>
+  </div>
 </div>
+  
+
+
 
 <address id="rodape">
   <strong>TopCasaFina Arquitetura</strong><br>
   Rua Vergueiro, 3184, Vila Mariana.<br>
-  São Paulo, SP<br><br>
+  São Paulo, SP<br>
   Email: email@email.com<br>
-  <abbr title="Phone">  Tel: (11) 8493-4544 ou 7583-5837</abbr>
+  <a title="Phone">  Tel: (11) 8493-4544 ou 7583-5837</a>
 </address>
 
 
 <!-- o bootstrap utiliza propriedades do jquery e do JavaScript -->
 <script src="jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 
   </body>
 </html>
